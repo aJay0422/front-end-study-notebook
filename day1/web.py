@@ -23,5 +23,9 @@ def goods_list():
 def user_list():
     return render_template("user_list.html")
 
+@app.route("/register")
+def register():
+    return render_template("register.html")
+
 if __name__ == "__main__":
     app.run()
