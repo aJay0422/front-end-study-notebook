@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .c1{
+            color: red;
+        }
+        .c2{
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>User Login</h1>
+    <h1 class="c1">User Login</h1>
     <form method="post" action="/login">
-        Username: <input type="text" name="username">
-        Password: <input type="password" name="password">
+        <div class="c2">
+            Username: <input type="text" name="username">
+        </div>
+
+        <div class="c2">
+            Password: <input type="password" name="password">
+        </div>
         <input type="submit" value="Submit">
     </form>
 </body>
